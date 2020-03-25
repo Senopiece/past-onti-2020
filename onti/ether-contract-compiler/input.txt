@@ -1,0 +1,57 @@
+push 1
+
+push 0
+calldataload
+
+push 32
+calldataload
+
+# if b != 0
+DUP1
+PUSH 0
+EQ
+
+PUSH a
+JUMPI
+# else body:
+    # return b = 0
+    JUMPDEST b
+    push 0
+    mstore
+    push 32
+    push 0
+    return
+
+# if body:
+    # while b <= n
+    JUMPDEST a
+    dup2
+    dup2
+    GT
+    NOT
+
+    push c
+    JUMPI
+    push d
+    JUMP
+        JUMPDEST c
+        # n = n // b
+		swap1
+        dup2
+        swap1
+        div
+        swap1
+
+        # res = res + 1
+		swap2 
+		push 1
+		add
+		swap2
+    push a
+    JUMP
+
+	# return r
+    JUMPDEST d
+	swap2
+	push b
+	jump

@@ -1,0 +1,96 @@
+digraph finite_state_machine {
+	rankdir=LR
+	s_star
+	s_0
+	s_star -> s_0 [label=0]
+	s_0
+	s_1__j
+	s_0 -> s_1__j [label=1]
+	s_0
+	t_1__i
+	s_0 -> t_1__i [label=2]
+	s_0
+	t_4__i
+	s_0 -> t_4__i [label=3]
+	s_0
+	t_6__i
+	s_0 -> t_6__i [label=4]
+	s_0
+	t_9__i
+	s_0 -> t_9__i [label=5]
+	s_0
+	s_star
+	s_0 -> s_star [label=30]
+	s_1__j
+	s_2__j
+	s_1__j -> s_2__j [label=6]
+	s_1__j
+	s_3__j
+	s_1__j -> s_3__j [label=8]
+	s_1__j
+	s_0
+	s_1__j -> s_0 [label=9]
+	s_2__j
+	s_3__j
+	s_2__j -> s_3__j [label=7]
+	s_3__j
+	s_0
+	s_3__j -> s_0 [label=10]
+	t_1__i
+	t_2__i
+	t_1__i -> t_2__i [label=11]
+	t_1__i
+	t_3__i
+	t_1__i -> t_3__i [label=12]
+	t_1__i
+	t_8__i
+	t_1__i -> t_8__i [label=13]
+	t_2__i
+	s_0
+	t_2__i -> s_0 [label=14]
+	t_3__i
+	t_2__i
+	t_3__i -> t_2__i [label=15]
+	t_4__i
+	t_11__i
+	t_4__i -> t_11__i [label=16]
+	t_4__i
+	t_2__i
+	t_4__i -> t_2__i [label=17]
+	t_4__i
+	t_5__i
+	t_4__i -> t_5__i [label=18]
+	t_5__i
+	t_2__i
+	t_5__i -> t_2__i [label=19]
+	t_6__i
+	t_11__i
+	t_6__i -> t_11__i [label=20]
+	t_6__i
+	t_2__i
+	t_6__i -> t_2__i [label=21]
+	t_6__i
+	t_7__i
+	t_6__i -> t_7__i [label=22]
+	t_7__i
+	t_11__i
+	t_7__i -> t_11__i [label=23]
+	t_8__i
+	t_2__i
+	t_8__i -> t_2__i [label=24]
+	t_9__i
+	t_11__i
+	t_9__i -> t_11__i [label=25]
+	t_9__i
+	t_2__i
+	t_9__i -> t_2__i [label=26]
+	t_9__i
+	t_10__i
+	t_9__i -> t_10__i [label=27]
+	t_10__i
+	t_11__i
+	t_10__i -> t_11__i [label=28]
+	t_11__i
+	t_2__i
+	t_11__i -> t_2__i [label=29]
+}
